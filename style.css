@@ -633,12 +633,18 @@ strong {
     padding: var(--space-5);
 }
 
+.team-photo,
 .avatar-placeholder {
     width: 64px;
     height: 64px;
     flex: 0 0 auto;
     border-radius: 50%;
     background: var(--border);
+}
+
+.team-photo {
+    display: block;
+    object-fit: cover;
 }
 
 .team-member h3 {
