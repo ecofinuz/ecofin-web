@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecofin</title>
+        <meta
+            name="description"
+            content="Ecofin is an open-source ecosystem of financial literacy tools, knowledge, and a blog."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <div class="nav-inner">
+                <a href="/" class="nav-brand" aria-label="Ecofin home"
+                    >Ecofin</a
+                >
+
+                <div class="nav-links">
+                    <a href="https://blog.ecofin.uz" class="nav-link">
+                        <span class="i18n" data-lang="uz">Blog</span>
+                        <span class="i18n" data-lang="en" hidden>Blog</span>
+                        <span class="i18n" data-lang="ru" hidden>Блог</span>
+                    </a>
+
+                    <a
+                        href="https://github.com/ecofinuz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="nav-link"
+                    >
+                        GitHub
+                    </a>
+
+                    <div class="language-switch" aria-label="Language selector">
+                        <button
+                            class="language-option active"
+                            type="button"
+                            data-set-lang="uz"
+                            aria-pressed="true"
+                        >
+                            UZ
+                        </button>
+                        <button
+                            class="language-option"
+                            type="button"
+                            data-set-lang="en"
+                            aria-pressed="false"
+                        >
+                            EN
+                        </button>
+                        <button
+                            class="language-option"
+                            type="button"
+                            data-set-lang="ru"
+                            aria-pressed="false"
+                        >
+                            RU
+                        </button>
+                    </div>
+
+                    <a
+                        href="#sponsors"
+                        class="button button-primary nav-support"
+                    >
+                        <span class="i18n" data-lang="uz"
+                            >Qo'llab-quvvatlash</span
+                        >
+                        <span class="i18n" data-lang="en" hidden
+                            >Support us</span
+                        >
+                        <span class="i18n" data-lang="ru" hidden
+                            >Поддержать</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="site-main">
+            <section class="hero container" aria-labelledby="hero-title">
+                <div class="hero-copy">
+                    <p class="label-small i18n" data-lang="uz">
+                        Ochiq moliya ekotizimi
+                    </p>
+                    <p class="label-small i18n" data-lang="en" hidden>
+                        Open finance ecosystem
+                    </p>
+                    <p class="label-small i18n" data-lang="ru" hidden>
+                        Открытая финансовая экосистема
+                    </p>
+
+                    <h1 id="hero-title" class="hero-title">
+                        <span class="i18n" data-lang="uz"
+                            >Moliya va iqtisod hammaga tushunarli tilda</span
+                        >
+                        <span class="i18n" data-lang="en" hidden
+                            >Finance and economics explained for everyone</span
+                        >
+                        <span class="i18n" data-lang="ru" hidden
+                            >Финансы и экономика понятным языком для
+                            каждого</span
+                        >
+                    </h1>
+
+                    <p class="hero-lede i18n" data-lang="uz">
+                        Ecofin moliyaviy savodxonlik, shaxsiy moliya va
+                        iqtisodiy tahlillarni ochiq blog, amaliy vositalar va
+                        ochiq kodli loyihalar orqali birlashtiradi.
+                    </p>
+                    <p class="hero-lede i18n" data-lang="en" hidden>
+                        Ecofin brings together financial literacy, personal
+                        finance, and economic analysis through an open blog,
+                        practical tools, and open-source projects.
+                    </p>
+                    <p class="hero-lede i18n" data-lang="ru" hidden>
+                        Ecofin объединяет финансовую грамотность, личные финансы
+                        и экономический анализ через открытый блог, практические
+                        инструменты и проекты с открытым исходным кодом.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a
+                            href="https://blog.ecofin.uz"
+                            class="button button-primary"
+                        >
+                            <span class="i18n" data-lang="uz"
+                                >Blogni o'qish</span
+                            >
+                            <span class="i18n" data-lang="en" hidden
+                                >Read the blog</span
+                            >
+                            <span class="i18n" data-lang="ru" hidden
+                                >Читать блог</span
+                            >
+                        </a>
+                        <a
+                            href="https://github.com/ecofinuz"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button button-secondary"
+                        >
+                            <span class="i18n" data-lang="uz"
+                                >GitHub'da ko'rish</span
+                            >
+                            <span class="i18n" data-lang="en" hidden
+                                >View on GitHub</span
+                            >
+                            <span class="i18n" data-lang="ru" hidden
+                                >Смотреть на GitHub</span
+                            >
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="visual-panel">
+                        <div class="visual-header">
+                            <span>Ecofin</span>
+                            <strong>2026</strong>
+                        </div>
+                        <div class="visual-rows">
+                            <div class="visual-row">
+                                <span class="visual-dot accent"></span>
+                                <span class="i18n" data-lang="uz"
+                                    >Blog va tahlillar</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Blog and analysis</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Блог и аналитика</span
+                                >
+                            </div>
+                            <div class="visual-row">
+                                <span class="visual-dot gold"></span>
+                                <span class="i18n" data-lang="uz"
+                                    >Shaxsiy moliya</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Personal finance</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Личные финансы</span
+                                >
+                            </div>
+                            <div class="visual-row">
+                                <span class="visual-dot blue"></span>
+                                <span class="i18n" data-lang="uz"
+                                    >Ochiq kod</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Open source</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Открытый код</span
+                                >
+                            </div>
+                        </div>
+                        <div class="visual-chart">
+                            <span
+                                class="visual-bar"
+                                style="
+                                    --bar-height: 36%;
+                                    --bar-color: var(--blue);
+                                "
+                            ></span>
+                            <span
+                                class="visual-bar"
+                                style="
+                                    --bar-height: 58%;
+                                    --bar-color: var(--gold);
+                                "
+                            ></span>
+                            <span
+                                class="visual-bar"
+                                style="
+                                    --bar-height: 76%;
+                                    --bar-color: var(--accent);
+                                "
+                            ></span>
+                            <span
+                                class="visual-bar"
+                                style="
+                                    --bar-height: 92%;
+                                    --bar-color: var(--accent-strong);
+                                "
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="projects"
+                class="page-section container"
+                aria-labelledby="projects-title"
+            >
+                <p class="section-label i18n" data-lang="uz">Loyihalar</p>
+                <p class="section-label i18n" data-lang="en" hidden>Projects</p>
+                <p class="section-label i18n" data-lang="ru" hidden>Проекты</p>
+
+                <div class="section-heading-row">
+                    <h2 id="projects-title">
+                        <span class="i18n" data-lang="uz"
+                            >Ecofin loyihalari</span
+                        >
+                        <span class="i18n" data-lang="en" hidden
+                            >Ecofin projects</span
+                        >
+                        <span class="i18n" data-lang="ru" hidden
+                            >Проекты Ecofin</span
+                        >
+                    </h2>
+                </div>
+
+                <div class="card-grid project-grid">
+                    <article class="info-card">
+                        <p class="eyebrow">blog.ecofin.uz</p>
+                        <h3>Blog</h3>
+                        <p class="i18n" data-lang="uz">
+                            Moliyaviy maqolalar va tahlillar
+                        </p>
+                        <p class="i18n" data-lang="en" hidden>
+                            Financial articles and analysis
+                        </p>
+                        <p class="i18n" data-lang="ru" hidden>
+                            Финансовые статьи и анализ
+                        </p>
+                        <a href="https://blog.ecofin.uz" class="text-link"
+                            >blog.ecofin.uz →</a
+                        >
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-topline">
+                            <p class="eyebrow">Ecofin</p>
+                            <span class="badge">
+                                <span class="i18n" data-lang="uz"
+                                    >Tez kunda</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Coming soon</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Скоро</span
+                                >
+                            </span>
+                        </div>
+                        <h3>Platform</h3>
+                        <p class="i18n" data-lang="uz">
+                            Shaxsiy moliya platformasi
+                        </p>
+                        <p class="i18n" data-lang="en" hidden>
+                            Personal finance platform
+                        </p>
+                        <p class="i18n" data-lang="ru" hidden>
+                            Платформа личных финансов
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <p class="eyebrow">github.com/ecofinuz</p>
+                        <h3>Open Source</h3>
+                        <p class="i18n" data-lang="uz">Ochiq manba kod</p>
+                        <p class="i18n" data-lang="en" hidden>
+                            Open source code
+                        </p>
+                        <p class="i18n" data-lang="ru" hidden>
+                            Открытый исходный код
+                        </p>
+                        <a
+                            href="https://github.com/ecofinuz"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link"
+                        >
+                            GitHub →
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section
+                id="sponsors"
+                class="page-section sponsors-section"
+                aria-labelledby="sponsors-title"
+            >
+                <div class="container split-section">
+                    <div class="section-copy">
+                        <p class="section-label i18n" data-lang="uz">
+                            Homiylar
+                        </p>
+                        <p class="section-label i18n" data-lang="en" hidden>
+                            Sponsors
+                        </p>
+                        <p class="section-label i18n" data-lang="ru" hidden>
+                            Спонсоры
+                        </p>
+
+                        <h2 id="sponsors-title">
+                            <span class="i18n" data-lang="uz"
+                                >Ecofin'ni qo'llab-quvvatlang</span
+                            >
+                            <span class="i18n" data-lang="en" hidden
+                                >Support Ecofin</span
+                            >
+                            <span class="i18n" data-lang="ru" hidden
+                                >Поддержите Ecofin</span
+                            >
+                        </h2>
+
+                        <p class="i18n" data-lang="uz">
+                            Homiylik yangi maqolalar, ochiq kodli vositalar va
+                            moliyaviy savodxonlikni kengroq auditoriyaga
+                            yetkazishga yordam beradi.
+                        </p>
+                        <p class="i18n" data-lang="en" hidden>
+                            Sponsorship helps us publish new articles, build
+                            open-source tools, and make financial literacy
+                            useful for a wider audience.
+                        </p>
+                        <p class="i18n" data-lang="ru" hidden>
+                            Поддержка помогает нам выпускать новые статьи,
+                            создавать открытые инструменты и делать финансовую
+                            грамотность полезной для широкой аудитории.
+                        </p>
+                    </div>
+
+                    <div class="sponsor-options">
+                        <article class="info-card sponsor-card">
+                            <p class="eyebrow">
+                                <span class="i18n" data-lang="uz"
+                                    >To'g'ridan-to'g'ri</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Direct transfer</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Прямой перевод</span
+                                >
+                            </p>
+                            <div class="transfer-details">
+                                <p>
+                                    <span>Card</span
+                                    ><strong>9860 0201 2078 0810</strong>
+                                </p>
+                                <p>
+                                    <span>Email</span
+                                    ><strong>hojiakbar@barotov.uz</strong>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="testimonials"
+                class="page-section container"
+                aria-labelledby="testimonials-title"
+            >
+                <p class="section-label i18n" data-lang="uz">Fikrlar</p>
+                <p class="section-label i18n" data-lang="en" hidden>
+                    Testimonials
+                </p>
+                <p class="section-label i18n" data-lang="ru" hidden>Отзывы</p>
+
+                <h2 id="testimonials-title">
+                    <span class="i18n" data-lang="uz">O'quvchilar fikri</span>
+                    <span class="i18n" data-lang="en" hidden
+                        >Reader feedback</span
+                    >
+                    <span class="i18n" data-lang="ru" hidden
+                        >Отзывы читателей</span
+                    >
+                </h2>
+
+                <div class="card-grid testimonial-grid">
+                    <article class="info-card testimonial-card">
+                        <blockquote class="i18n" data-lang="uz">
+                            "Murakkab moliyaviy mavzularni sodda va ishonchli
+                            tushuntiradi."
+                        </blockquote>
+                        <blockquote class="i18n" data-lang="en" hidden>
+                            "Complex finance topics are explained clearly and
+                            reliably."
+                        </blockquote>
+                        <blockquote class="i18n" data-lang="ru" hidden>
+                            "Сложные финансовые темы объясняются понятно и
+                            надежно."
+                        </blockquote>
+                        <div>
+                            <h3>
+                                <span class="i18n" data-lang="uz"
+                                    >Aziza Karimova</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Aziza Karimova</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Азиза Каримова</span
+                                >
+                            </h3>
+                            <p class="role">
+                                <span class="i18n" data-lang="uz"
+                                    >O'quvchi</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Reader</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Читатель</span
+                                >
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="info-card testimonial-card">
+                        <blockquote class="i18n" data-lang="uz">
+                            "Ecofin blogi shaxsiy byudjet haqida yaxshiroq qaror
+                            qilishimga yordam berdi."
+                        </blockquote>
+                        <blockquote class="i18n" data-lang="en" hidden>
+                            "The Ecofin blog helped me make better decisions
+                            about my personal budget."
+                        </blockquote>
+                        <blockquote class="i18n" data-lang="ru" hidden>
+                            "Блог Ecofin помог мне принимать более осознанные
+                            решения о личном бюджете."
+                        </blockquote>
+                        <div>
+                            <h3>
+                                <span class="i18n" data-lang="uz"
+                                    >Jasur Aliyev</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Jasur Aliyev</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Жасур Алиев</span
+                                >
+                            </h3>
+                            <p class="role">
+                                <span class="i18n" data-lang="uz"
+                                    >Tadbirkor</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Entrepreneur</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Предприниматель</span
+                                >
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="info-card testimonial-card">
+                        <blockquote class="i18n" data-lang="uz">
+                            "Ochiq kodli yondashuv loyiha atrofida ishonchli
+                            hamjamiyat yaratadi."
+                        </blockquote>
+                        <blockquote class="i18n" data-lang="en" hidden>
+                            "The open-source approach builds a trustworthy
+                            community around the project."
+                        </blockquote>
+                        <blockquote class="i18n" data-lang="ru" hidden>
+                            "Открытый подход формирует вокруг проекта надежное
+                            сообщество."
+                        </blockquote>
+                        <div>
+                            <h3>
+                                <span class="i18n" data-lang="uz"
+                                    >Dilshod Nazarov</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Dilshod Nazarov</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Дилшод Назаров</span
+                                >
+                            </h3>
+                            <p class="role">
+                                <span class="i18n" data-lang="uz"
+                                    >Dasturchi</span
+                                >
+                                <span class="i18n" data-lang="en" hidden
+                                    >Developer</span
+                                >
+                                <span class="i18n" data-lang="ru" hidden
+                                    >Разработчик</span
+                                >
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section
+                id="about"
+                class="page-section about-section"
+                aria-labelledby="about-title"
+            >
+                <div class="container split-section">
+                    <div class="section-copy">
+                        <p class="section-label i18n" data-lang="uz">
+                            Biz haqimizda
+                        </p>
+                        <p class="section-label i18n" data-lang="en" hidden>
+                            About
+                        </p>
+                        <p class="section-label i18n" data-lang="ru" hidden>
+                            О нас
+                        </p>
+
+                        <h2 id="about-title">Ecofin</h2>
+                        <p class="i18n" data-lang="uz">
+                            Ecofin'ning missiyasi moliyaviy savodxonlikni
+                            amaliy, ochiq va mahalliy auditoriya uchun foydali
+                            qilishdir. Biz maqolalar, tahlillar va ochiq kodli
+                            mahsulotlar orqali yaxshiroq moliyaviy qarorlar
+                            uchun bilim ulashamiz.
+                        </p>
+                        <p class="i18n" data-lang="en" hidden>
+                            Ecofin's mission is to make financial literacy
+                            practical, open, and useful for a local audience. We
+                            share knowledge through articles, analysis, and
+                            open-source products that support better financial
+                            decisions.
+                        </p>
+                        <p class="i18n" data-lang="ru" hidden>
+                            Миссия Ecofin - сделать финансовую грамотность
+                            практичной, открытой и полезной для локальной
+                            аудитории. Мы делимся знаниями через статьи,
+                            аналитику и открытые продукты, которые помогают
+                            принимать более разумные финансовые решения.
+                        </p>
+                    </div>
+
+                    <div class="team-list">
+                        <article class="team-member">
+                            <span
+                                class="avatar-placeholder"
+                                aria-hidden="true"
+                            ></span>
+                            <div>
+                                <h3>Hojiakbar Barotov</h3>
+                                <p>
+                                    <span class="i18n" data-lang="uz"
+                                        >Asoschi va muallif</span
+                                    >
+                                    <span class="i18n" data-lang="en" hidden
+                                        >Founder & author</span
+                                    >
+                                    <span class="i18n" data-lang="ru" hidden
+                                        >Основатель и автор</span
+                                    >
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="team-member">
+                            <span
+                                class="avatar-placeholder"
+                                aria-hidden="true"
+                            ></span>
+                            <div>
+                                <h3>[Brother's name]</h3>
+                                <p>
+                                    <span class="i18n" data-lang="uz"
+                                        >Hammuallif</span
+                                    >
+                                    <span class="i18n" data-lang="en" hidden
+                                        >Co-author</span
+                                    >
+                                    <span class="i18n" data-lang="ru" hidden
+                                        >Соавтор</span
+                                    >
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-main">
+                <div class="footer-intro">
+                    <span class="footer-brand">Ecofin</span>
+                    <span class="footer-tagline">
+                        <span class="i18n" data-lang="uz"
+                            >Moliya va iqtisod hammaga tushunarli tilda</span
+                        >
+                        <span class="i18n" data-lang="en" hidden
+                            >Finance and economics explained for everyone</span
+                        >
+                        <span class="i18n" data-lang="ru" hidden
+                            >Финансы и экономика понятным языком для
+                            каждого</span
+                        >
+                    </span>
+                </div>
+
+                <nav class="footer-links" aria-label="Footer links">
+                    <a href="https://blog.ecofin.uz">Blog</a>
+                    <a
+                        href="https://github.com/ecofinuz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://t.me/ecofin_uz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Telegram</a
+                    >
+                    <a href="#sponsors">
+                        <span class="i18n" data-lang="uz">Homiylar</span>
+                        <span class="i18n" data-lang="en" hidden>Sponsors</span>
+                        <span class="i18n" data-lang="ru" hidden>Спонсоры</span>
+                    </a>
+                </nav>
+            </div>
+
+            <div class="container footer-bottom">
+                <p>
+                    <span class="i18n" data-lang="uz"
+                        >© 2026 Ecofin. Barcha huquqlar himoyalangan.</span
+                    >
+                    <span class="i18n" data-lang="en" hidden
+                        >© 2026 Ecofin. All rights reserved.</span
+                    >
+                    <span class="i18n" data-lang="ru" hidden
+                        >© 2026 Ecofin. Все права защищены.</span
+                    >
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            const langButtons = document.querySelectorAll("[data-set-lang]");
+            const langText = document.querySelectorAll(".i18n[data-lang]");
+
+            function setLanguage(lang) {
+                document.documentElement.lang = lang;
+                langText.forEach((node) => {
+                    node.hidden = node.dataset.lang !== lang;
+                });
+                langButtons.forEach((button) => {
+                    const active = button.dataset.setLang === lang;
+                    button.classList.toggle("active", active);
+                    button.setAttribute("aria-pressed", active);
+                });
+            }
+
+            langButtons.forEach((button) => {
+                button.addEventListener("click", () =>
+                    setLanguage(button.dataset.setLang),
+                );
+            });
+        </script>
+    </body>
+</html>
