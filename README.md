@@ -77,7 +77,7 @@ All visual styles are in `style.css`, including:
 - Navigation
 - Hero section
 - Cards
-- Sponsors, testimonials, and about sections
+- Sponsors and about sections
 - Footer
 
 No build step is required.
