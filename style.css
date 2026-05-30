@@ -1,34 +1,49 @@
 /* 1. Theme */
 :root {
+    color-scheme: light;
+
     --font-sans:
         "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", sans-serif;
     --font-serif: "Lora", Georgia, serif;
 
-    --color-bg: #f5f1e8;
-    --color-bg-soft: #faf8f2;
-    --surface: #fffdf8;
-    --surface-muted: #f0ece2;
-    --border: #ded6c8;
-    --border-strong: #c5b8a4;
-    --text-primary: #17201b;
-    --text-secondary: #4c5a53;
-    --text-muted: #758078;
-    --text-inverted: #fffdf8;
-    --accent: #0f6b4f;
-    --accent-strong: #084c3a;
-    --accent-soft: #deefe7;
-    --gold: #bd7a22;
-    --blue: #315f86;
+    --color-bg: #ffffff;
+    --color-bg-soft: #f7f7f7;
+    --surface: #ffffff;
+    --surface-muted: rgb(5 5 5 / 0.045);
+    --border: rgb(5 5 5 / 0.14);
+    --border-strong: rgb(214 162 58 / 0.7);
+    --text-primary: #050505;
+    --text-secondary: rgb(5 5 5 / 0.76);
+    --text-muted: rgb(5 5 5 / 0.58);
+    --text-inverted: #050505;
+    --gold: #d6a23a;
+    --gold-action: #9b6112;
+    --gold-soft: rgb(214 162 58 / 0.16);
+    --text-on-gold: #ffffff;
+    --page-gradient: rgb(214 162 58 / 0.14);
+    --page-gradient-end: rgb(255 255 255 / 0);
+    --nav-bg: rgb(255 255 255 / 0.9);
+    --nav-menu-bg: rgb(255 255 255 / 0.98);
+    --control-bg: rgb(5 5 5 / 0.04);
+    --section-band-bg: rgb(5 5 5 / 0.035);
+    --footer-bg: var(--color-bg);
+    --button-primary-bg: var(--gold-action);
+    --button-primary-color: var(--text-on-gold);
+    --button-primary-border: var(--gold-action);
+    --button-primary-hover-bg: #050505;
+    --button-primary-hover-color: #ffffff;
+    --button-primary-hover-border: #050505;
+    --toggler-icon-filter: none;
 
     --page-width: 1120px;
     --radius-xs: 3px;
     --radius-sm: 5px;
     --radius: 8px;
     --shadow-sm:
-        0 1px 2px rgb(23 32 27 / 0.05), 0 10px 24px rgb(23 32 27 / 0.06);
-    --shadow: 0 16px 36px rgb(23 32 27 / 0.1);
-    --ring: 0 0 0 3px rgb(15 107 79 / 0.18);
+        0 1px 2px rgb(0 0 0 / 0.08), 0 14px 36px rgb(0 0 0 / 0.08);
+    --shadow: 0 24px 64px rgb(0 0 0 / 0.14);
+    --ring: 0 0 0 3px rgb(214 162 58 / 0.34);
     --transition: 160ms ease;
 
     --bs-body-bg: var(--color-bg);
@@ -37,10 +52,40 @@
     --bs-body-line-height: 1.72;
     --bs-border-color: var(--border);
     --bs-border-radius: var(--radius);
-    --bs-primary: var(--accent-strong);
-    --bs-primary-rgb: 8, 76, 58;
-    --bs-link-color: var(--accent-strong);
+    --bs-primary: var(--gold);
+    --bs-primary-rgb: 214, 162, 58;
+    --bs-link-color: var(--gold);
     --bs-link-hover-color: var(--text-primary);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+
+    --color-bg: #050505;
+    --color-bg-soft: #0d0d0d;
+    --surface: #0b0b0b;
+    --surface-muted: #151515;
+    --border: rgb(255 255 255 / 0.16);
+    --text-primary: #ffffff;
+    --text-secondary: rgb(255 255 255 / 0.78);
+    --text-muted: rgb(255 255 255 / 0.58);
+    --page-gradient: rgb(214 162 58 / 0.12);
+    --page-gradient-end: rgb(5 5 5 / 0);
+    --nav-bg: rgb(5 5 5 / 0.9);
+    --nav-menu-bg: rgb(5 5 5 / 0.98);
+    --control-bg: rgb(255 255 255 / 0.04);
+    --section-band-bg: rgb(255 255 255 / 0.035);
+    --footer-bg: var(--color-bg);
+    --button-primary-bg: #ffffff;
+    --button-primary-color: #050505;
+    --button-primary-border: #ffffff;
+    --button-primary-hover-bg: var(--gold-action);
+    --button-primary-hover-color: var(--text-on-gold);
+    --button-primary-hover-border: var(--gold-action);
+    --toggler-icon-filter: invert(1);
+    --shadow-sm:
+        0 1px 2px rgb(0 0 0 / 0.42), 0 14px 36px rgb(0 0 0 / 0.34);
+    --shadow: 0 24px 64px rgb(0 0 0 / 0.48);
 }
 
 html {
@@ -53,9 +98,8 @@ body {
     background:
         linear-gradient(
             180deg,
-            var(--color-bg-soft) 0,
-            var(--color-bg) 430px,
-            #f7f4ee 100%
+            var(--page-gradient) 0,
+            var(--page-gradient-end) 360px
         ),
         var(--color-bg);
     color: var(--text-primary);
@@ -75,8 +119,8 @@ button:focus-visible {
 }
 
 ::selection {
-    background: var(--accent-soft);
-    color: var(--accent-strong);
+    background: var(--gold);
+    color: var(--text-inverted);
 }
 
 .container {
@@ -120,7 +164,7 @@ strong {
 .section-label,
 .label-small,
 .eyebrow {
-    color: var(--text-muted);
+    color: var(--gold);
     font-size: 0.74rem;
     font-weight: 800;
     letter-spacing: 0;
@@ -136,8 +180,8 @@ strong {
 /* 3. Navigation */
 .site-nav {
     z-index: 1030;
-    border-bottom: 1px solid rgb(222 214 200 / 0.8);
-    background: rgb(250 248 242 / 0.92);
+    border-bottom: 1px solid var(--border);
+    background: var(--nav-bg);
     backdrop-filter: blur(18px);
 }
 
@@ -169,6 +213,7 @@ strong {
     height: 28px;
     flex-shrink: 0;
     border-radius: 6px;
+    box-shadow: 0 0 0 1px rgb(214 162 58 / 0.28);
     object-fit: contain;
 }
 
@@ -204,6 +249,10 @@ strong {
     box-shadow: var(--ring);
 }
 
+.navbar-toggler-icon {
+    filter: var(--toggler-icon-filter);
+}
+
 .nav-link {
     min-height: 38px;
     display: inline-flex;
@@ -226,8 +275,8 @@ strong {
 .navbar-nav .nav-link.show,
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--accent-strong);
-    background: var(--accent-soft);
+    color: var(--gold);
+    background: var(--gold-soft);
 }
 
 .language-switch {
@@ -237,7 +286,7 @@ strong {
     width: max-content;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    background: var(--surface);
+    background: var(--control-bg);
     padding: 3px;
 }
 
@@ -266,8 +315,58 @@ strong {
 }
 
 .language-option.active {
-    color: var(--text-inverted);
-    background: var(--accent-strong);
+    color: var(--text-on-gold);
+    background: var(--gold-action);
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--control-bg);
+    color: var(--text-secondary);
+    padding: 0;
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition);
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    border-color: var(--border-strong);
+    background: var(--gold-soft);
+    color: var(--gold);
+}
+
+.theme-toggle-icon {
+    flex: 0 0 auto;
+}
+
+.theme-toggle-moon {
+    fill: currentColor;
+}
+
+.theme-toggle-sun {
+    display: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+:root[data-theme="dark"] .theme-toggle-moon {
+    display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle-sun {
+    display: block;
 }
 
 .nav-support {
@@ -302,15 +401,15 @@ strong {
 }
 
 .button-primary {
-    --bs-btn-color: var(--text-inverted);
-    --bs-btn-bg: var(--accent-strong);
-    --bs-btn-border-color: var(--accent-strong);
-    --bs-btn-hover-color: var(--text-inverted);
-    --bs-btn-hover-bg: var(--text-primary);
-    --bs-btn-hover-border-color: var(--text-primary);
-    --bs-btn-active-color: var(--text-inverted);
-    --bs-btn-active-bg: var(--text-primary);
-    --bs-btn-active-border-color: var(--text-primary);
+    --bs-btn-color: var(--button-primary-color);
+    --bs-btn-bg: var(--button-primary-bg);
+    --bs-btn-border-color: var(--button-primary-border);
+    --bs-btn-hover-color: var(--button-primary-hover-color);
+    --bs-btn-hover-bg: var(--button-primary-hover-bg);
+    --bs-btn-hover-border-color: var(--button-primary-hover-border);
+    --bs-btn-active-color: var(--button-primary-hover-color);
+    --bs-btn-active-bg: var(--button-primary-hover-bg);
+    --bs-btn-active-border-color: var(--button-primary-hover-border);
     box-shadow: var(--shadow-sm);
 }
 
@@ -319,13 +418,13 @@ strong {
 }
 
 .button-secondary {
-    --bs-btn-color: var(--text-secondary);
+    --bs-btn-color: var(--text-primary);
     --bs-btn-bg: var(--surface);
     --bs-btn-border-color: var(--border);
-    --bs-btn-hover-color: var(--accent-strong);
-    --bs-btn-hover-bg: var(--surface);
+    --bs-btn-hover-color: var(--gold);
+    --bs-btn-hover-bg: var(--surface-muted);
     --bs-btn-hover-border-color: var(--border-strong);
-    --bs-btn-active-color: var(--accent-strong);
+    --bs-btn-active-color: var(--gold);
     --bs-btn-active-bg: var(--surface-muted);
     --bs-btn-active-border-color: var(--border-strong);
 }
@@ -336,8 +435,8 @@ strong {
 }
 
 .hero {
-    padding-top: 5rem;
-    padding-bottom: 4rem;
+    padding-top: 5.75rem;
+    padding-bottom: 4.75rem;
 }
 
 .hero-title {
@@ -364,7 +463,7 @@ strong {
 .section-band {
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    background: rgb(255 253 248 / 0.42);
+    background: var(--section-band-bg);
 }
 
 .section-heading-row {
@@ -382,10 +481,22 @@ strong {
     border-radius: var(--radius);
     background: var(--surface);
     color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+    transition:
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
 }
 
 .info-card {
     min-height: 100%;
+}
+
+.info-card:hover,
+.team-member:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
 }
 
 .info-card .card-body {
@@ -416,15 +527,15 @@ strong {
 }
 
 .badge {
-    --bs-badge-color: var(--accent-strong);
+    --bs-badge-color: var(--gold);
     min-height: 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--border);
     border-radius: 999px;
-    background: var(--accent-soft);
-    color: var(--accent-strong);
+    background: var(--gold-soft);
+    color: var(--gold);
     font-size: 0.78rem;
     font-weight: 800;
     line-height: 1;
@@ -434,7 +545,7 @@ strong {
 
 .text-link {
     margin-top: auto;
-    color: var(--accent-strong);
+    color: var(--gold);
     font-weight: 800;
     text-decoration: none;
 }
@@ -485,7 +596,8 @@ strong {
     height: 64px;
     flex: 0 0 auto;
     border-radius: 50%;
-    background: var(--border);
+    border: 1px solid var(--border);
+    background: var(--surface-muted);
     object-fit: cover;
 }
 
@@ -505,7 +617,7 @@ strong {
 /* 7. Footer */
 .site-footer {
     border-top: 1px solid var(--border);
-    background: rgb(255 253 248 / 0.58);
+    background: var(--footer-bg);
     color: var(--text-muted);
     font-size: 0.9rem;
     padding: 2.5rem 0 2rem;
@@ -540,7 +652,7 @@ strong {
 }
 
 .footer-links a:hover {
-    color: var(--accent-strong);
+    color: var(--gold);
     text-decoration: underline;
 }
 
@@ -590,7 +702,7 @@ strong {
         margin-top: 0.85rem;
         border: 1px solid var(--border);
         border-radius: var(--radius);
-        background: var(--surface);
+        background: var(--nav-menu-bg);
         box-shadow: var(--shadow-sm);
         padding: 0.75rem;
     }
