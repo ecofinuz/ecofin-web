@@ -12,16 +12,24 @@
     --surface: #ffffff;
     --surface-muted: rgb(5 5 5 / 0.045);
     --border: rgb(5 5 5 / 0.14);
-    --border-strong: rgb(214 162 58 / 0.7);
+    --border-strong: var(--accent-border);
     --text-primary: #050505;
     --text-secondary: rgb(5 5 5 / 0.76);
     --text-muted: rgb(5 5 5 / 0.58);
     --text-inverted: #050505;
-    --gold: #d6a23a;
-    --gold-action: #9b6112;
-    --gold-soft: rgb(214 162 58 / 0.16);
+    --gold-brand: #d6a23a;
+    --gold-brand-rgb: 214 162 58;
+    --gold-text: #7c4a03;
+    --gold-text-rgb: 124 74 3;
+    --gold-action: #8a550b;
+    --gold-action-rgb: 138 85 11;
+    --gold-action-hover: #6f4206;
+    --gold-soft: rgb(var(--gold-brand-rgb) / 0.12);
+    --accent-border: rgb(var(--gold-action-rgb) / 0.55);
+    --accent-ring: rgb(var(--gold-text-rgb) / 0.28);
+    --gold: var(--gold-brand);
     --text-on-gold: #ffffff;
-    --page-gradient: rgb(214 162 58 / 0.14);
+    --page-gradient: rgb(var(--gold-brand-rgb) / 0.14);
     --page-gradient-end: rgb(255 255 255 / 0);
     --nav-bg: rgb(255 255 255 / 0.9);
     --nav-menu-bg: rgb(255 255 255 / 0.98);
@@ -31,9 +39,9 @@
     --button-primary-bg: var(--gold-action);
     --button-primary-color: var(--text-on-gold);
     --button-primary-border: var(--gold-action);
-    --button-primary-hover-bg: #050505;
-    --button-primary-hover-color: #ffffff;
-    --button-primary-hover-border: #050505;
+    --button-primary-hover-bg: var(--gold-action-hover);
+    --button-primary-hover-color: var(--text-on-gold);
+    --button-primary-hover-border: var(--gold-action-hover);
     --toggler-icon-filter: none;
 
     --page-width: 1120px;
@@ -43,7 +51,7 @@
     --shadow-sm:
         0 1px 2px rgb(0 0 0 / 0.08), 0 14px 36px rgb(0 0 0 / 0.08);
     --shadow: 0 24px 64px rgb(0 0 0 / 0.14);
-    --ring: 0 0 0 3px rgb(214 162 58 / 0.34);
+    --ring: 0 0 0 3px var(--accent-ring);
     --transition: 160ms ease;
 
     --bs-body-bg: var(--color-bg);
@@ -52,9 +60,9 @@
     --bs-body-line-height: 1.72;
     --bs-border-color: var(--border);
     --bs-border-radius: var(--radius);
-    --bs-primary: var(--gold);
-    --bs-primary-rgb: 214, 162, 58;
-    --bs-link-color: var(--gold);
+    --bs-primary: var(--gold-action);
+    --bs-primary-rgb: 138, 85, 11;
+    --bs-link-color: var(--gold-text);
     --bs-link-hover-color: var(--text-primary);
 }
 
@@ -69,20 +77,32 @@
     --text-primary: #ffffff;
     --text-secondary: rgb(255 255 255 / 0.78);
     --text-muted: rgb(255 255 255 / 0.58);
-    --page-gradient: rgb(214 162 58 / 0.12);
+    --gold-text: #e8bd61;
+    --gold-text-rgb: 232 189 97;
+    --gold-action: #e8bd61;
+    --gold-action-rgb: 232 189 97;
+    --gold-action-hover: #f0c978;
+    --gold-soft: rgb(var(--gold-action-rgb) / 0.13);
+    --accent-border: rgb(var(--gold-action-rgb) / 0.48);
+    --accent-ring: rgb(var(--gold-action-rgb) / 0.34);
+    --text-on-gold: #050505;
+    --page-gradient: rgb(var(--gold-brand-rgb) / 0.12);
     --page-gradient-end: rgb(5 5 5 / 0);
     --nav-bg: rgb(5 5 5 / 0.9);
     --nav-menu-bg: rgb(5 5 5 / 0.98);
     --control-bg: rgb(255 255 255 / 0.04);
     --section-band-bg: rgb(255 255 255 / 0.035);
     --footer-bg: var(--color-bg);
-    --button-primary-bg: #ffffff;
-    --button-primary-color: #050505;
-    --button-primary-border: #ffffff;
-    --button-primary-hover-bg: var(--gold-action);
+    --button-primary-bg: var(--gold-action);
+    --button-primary-color: var(--text-on-gold);
+    --button-primary-border: var(--gold-action);
+    --button-primary-hover-bg: var(--gold-action-hover);
     --button-primary-hover-color: var(--text-on-gold);
-    --button-primary-hover-border: var(--gold-action);
+    --button-primary-hover-border: var(--gold-action-hover);
     --toggler-icon-filter: invert(1);
+    --bs-primary: var(--gold-action);
+    --bs-primary-rgb: 232, 189, 97;
+    --bs-link-color: var(--gold-text);
     --shadow-sm:
         0 1px 2px rgb(0 0 0 / 0.42), 0 14px 36px rgb(0 0 0 / 0.34);
     --shadow: 0 24px 64px rgb(0 0 0 / 0.48);
@@ -164,7 +184,7 @@ strong {
 .section-label,
 .label-small,
 .eyebrow {
-    color: var(--gold);
+    color: var(--gold-text);
     font-size: 0.74rem;
     font-weight: 800;
     letter-spacing: 0;
@@ -213,7 +233,7 @@ strong {
     height: 28px;
     flex-shrink: 0;
     border-radius: 6px;
-    box-shadow: 0 0 0 1px rgb(214 162 58 / 0.28);
+    box-shadow: 0 0 0 1px var(--accent-border);
     object-fit: contain;
 }
 
@@ -275,7 +295,7 @@ strong {
 .navbar-nav .nav-link.show,
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--gold);
+    color: var(--gold-text);
     background: var(--gold-soft);
 }
 
@@ -339,9 +359,9 @@ strong {
 
 .theme-toggle:hover,
 .theme-toggle:focus {
-    border-color: var(--border-strong);
+    border-color: var(--accent-border);
     background: var(--gold-soft);
-    color: var(--gold);
+    color: var(--gold-text);
 }
 
 .theme-toggle-icon {
@@ -421,12 +441,12 @@ strong {
     --bs-btn-color: var(--text-primary);
     --bs-btn-bg: var(--surface);
     --bs-btn-border-color: var(--border);
-    --bs-btn-hover-color: var(--gold);
+    --bs-btn-hover-color: var(--gold-text);
     --bs-btn-hover-bg: var(--surface-muted);
-    --bs-btn-hover-border-color: var(--border-strong);
-    --bs-btn-active-color: var(--gold);
+    --bs-btn-hover-border-color: var(--accent-border);
+    --bs-btn-active-color: var(--gold-text);
     --bs-btn-active-bg: var(--surface-muted);
-    --bs-btn-active-border-color: var(--border-strong);
+    --bs-btn-active-border-color: var(--accent-border);
 }
 
 /* 5. Sections */
@@ -527,7 +547,7 @@ strong {
 }
 
 .badge {
-    --bs-badge-color: var(--gold);
+    --bs-badge-color: var(--gold-text);
     min-height: 30px;
     display: inline-flex;
     align-items: center;
@@ -535,7 +555,7 @@ strong {
     border: 1px solid var(--border);
     border-radius: 999px;
     background: var(--gold-soft);
-    color: var(--gold);
+    color: var(--gold-text);
     font-size: 0.78rem;
     font-weight: 800;
     line-height: 1;
@@ -545,7 +565,7 @@ strong {
 
 .text-link {
     margin-top: auto;
-    color: var(--gold);
+    color: var(--gold-text);
     font-weight: 800;
     text-decoration: none;
 }
@@ -652,7 +672,7 @@ strong {
 }
 
 .footer-links a:hover {
-    color: var(--gold);
+    color: var(--gold-text);
     text-decoration: underline;
 }
 
