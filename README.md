@@ -9,10 +9,8 @@ ecofin-web/
 ├── index.html
 ├── style.css
 └── assets/
-    ├── favicon.png
-    └── images/
-        ├── hojiakbar.webp
-        └── axror.webp
+    ├── ecofin-favicon.png
+    └── favicon.png
 ```
 
 ## Preview
@@ -42,32 +40,6 @@ class="i18n" data-lang="ru"
 ```
 
 When changing copy, update all three language versions where possible.
-
-## Founder Images
-
-Put founder photos in:
-
-```text
-assets/images/
-```
-
-Use relative image paths in the About section:
-
-```html
-<img
-    class="team-photo"
-    src="assets/images/hojiakbar.webp"
-    alt="Hojiakbar Barotov"
-/>
-
-<img
-    class="team-photo"
-    src="assets/images/axror.webp"
-    alt="Axror Barotov"
-/>
-```
-
-Images are styled by `.team-photo` in `style.css` as 64px circular portraits.
 
 ## Styling
 
