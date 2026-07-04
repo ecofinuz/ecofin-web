@@ -12,8 +12,6 @@
         <meta property="og:url" content="https://ecofin.uz/ru/" />
         <meta property="og:site_name" content="Ecofin" />
         <meta property="og:locale" content="ru_RU" />
-        <meta property="og:locale:alternate" content="uz_UZ" />
-        <meta property="og:locale:alternate" content="en_US" />
         <meta property="og:image" content="https://ecofin.uz/assets/ecofin-favicon.png" />
         <meta property="og:image:secure_url" content="https://ecofin.uz/assets/ecofin-favicon.png" />
         <meta property="og:image:type" content="image/png" />
@@ -27,8 +25,8 @@
         <meta name="twitter:image:alt" content="Ecofin - открытые финансовые знания, для всех" />
         <meta name="theme-color" content="#fffefb" />
         <title>Финансовая грамотность простым языком | Ecofin</title>
-        <link rel="shortcut icon" href="../assets/ecofin-favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="../assets/ecofin-favicon.png" />
+        <link rel="shortcut icon" href="/assets/ecofin-favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/assets/ecofin-favicon.png" />
         <link rel="canonical" href="https://ecofin.uz/ru/" />
         <link rel="alternate" hreflang="uz" href="https://ecofin.uz/" />
         <link rel="alternate" hreflang="en" href="https://ecofin.uz/en/" />
@@ -36,245 +34,98 @@
         <link rel="alternate" hreflang="x-default" href="https://ecofin.uz/" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
         <script>
             (() => {
                 try {
                     if (localStorage.getItem("ecofin-theme") === "dark") {
                         document.documentElement.dataset.theme = "dark";
-                        document
-                            .querySelector('meta[name="theme-color"]')
-                            ?.setAttribute("content", "#050807");
+                        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#050807");
                     }
-                } catch {
-                    // Keep the light default when storage is unavailable.
-                }
+                } catch {}
             })();
         </script>
         <script type="application/ld+json">
 {
-                "@context": "https://schema.org",
-                "@graph": [
-                                {
-                                                "@type": "Organization",
-                                                "@id": "https://ecofin.uz/#organization",
-                                                "name": "Ecofin",
-                                                "url": "https://ecofin.uz/",
-                                                "logo": {
-                                                                "@type": "ImageObject",
-                                                                "url": "https://ecofin.uz/assets/ecofin-favicon.png",
-                                                                "width": 152,
-                                                                "height": 128
-                                                },
-                                                "sameAs": [
-                                                                "https://github.com/ecofinuz",
-                                                                "https://t.me/ecofin_uz"
-                                                ]
-                                },
-                                {
-                                                "@type": "WebSite",
-                                                "@id": "https://ecofin.uz/#website",
-                                                "url": "https://ecofin.uz/",
-                                                "name": "Ecofin",
-                                                "description": "Ecofin — open-source проект о финансовой грамотности: простые материалы о кредитах, сбережениях, ставках, банках и денежных решениях.",
-                                                "publisher": {
-                                                                "@id": "https://ecofin.uz/#organization"
-                                                },
-                                                "inLanguage": "ru"
-                                },
-                                {
-                                                "@type": "WebPage",
-                                                "@id": "https://ecofin.uz/ru/#webpage",
-                                                "url": "https://ecofin.uz/ru/",
-                                                "name": "Финансовая грамотность простым языком | Ecofin",
-                                                "description": "Ecofin — open-source проект о финансовой грамотности: простые материалы о кредитах, сбережениях, ставках, банках и денежных решениях.",
-                                                "isPartOf": {
-                                                                "@id": "https://ecofin.uz/#website"
-                                                },
-                                                "about": {
-                                                                "@id": "https://ecofin.uz/#organization"
-                                                },
-                                                "inLanguage": "ru"
-                                }
-                ]
+            "@context": "https://schema.org",
+            "@graph": [
+                        {
+                                    "@type": "Organization",
+                                    "@id": "https://ecofin.uz/#organization",
+                                    "name": "Ecofin",
+                                    "url": "https://ecofin.uz/",
+                                    "logo": {
+                                                "@type": "ImageObject",
+                                                "url": "https://ecofin.uz/assets/ecofin-favicon.png",
+                                                "width": 152,
+                                                "height": 128
+                                    },
+                                    "sameAs": [
+                                                "https://github.com/ecofinuz",
+                                                "https://t.me/ecofin_uz"
+                                    ]
+                        },
+                        {
+                                    "@type": "WebSite",
+                                    "@id": "https://ecofin.uz/ru/#website",
+                                    "url": "https://ecofin.uz/ru/",
+                                    "name": "Ecofin",
+                                    "description": "Ecofin — open-source проект о финансовой грамотности: простые материалы о кредитах, сбережениях, ставках, банках и денежных решениях.",
+                                    "publisher": {
+                                                "@id": "https://ecofin.uz/#organization"
+                                    },
+                                    "inLanguage": "ru"
+                        },
+                        {
+                                    "@type": "WebPage",
+                                    "@id": "https://ecofin.uz/ru/#webpage",
+                                    "url": "https://ecofin.uz/ru/",
+                                    "name": "Финансовая грамотность простым языком | Ecofin",
+                                    "description": "Ecofin — open-source проект о финансовой грамотности: простые материалы о кредитах, сбережениях, ставках, банках и денежных решениях.",
+                                    "isPartOf": {
+                                                "@id": "https://ecofin.uz/ru/#website"
+                                    },
+                                    "about": {
+                                                "@id": "https://ecofin.uz/#organization"
+                                    },
+                                    "inLanguage": "ru"
+                        }
+            ]
 }
         </script>
-        <link rel="stylesheet" href="../style.css" />
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-R73J85XQ5N"
-        ></script>
+        <link rel="stylesheet" href="/style.css" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R73J85XQ5N"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+            function gtag() { dataLayer.push(arguments); }
             gtag("js", new Date());
-
             gtag("config", "G-R73J85XQ5N");
         </script>
     </head>
     <body>
-        <nav
-            class="navbar navbar-expand-md site-nav sticky-top"
-            aria-label="Primary navigation"
-        >
+        <nav class="navbar navbar-expand-md site-nav sticky-top" aria-label="Основная навигация">
             <div class="container">
-                <a
-                    href="/ru/"
-                    class="navbar-brand nav-brand"
-                    aria-label="Ecofin home"
-                >
-                    <img
-                        src="../assets/ecofin-favicon.png"
-                        alt=""
-                        class="nav-brand-logo"
-                        width="28"
-                        height="28"
-                    />
+                <a href="/ru" class="navbar-brand nav-brand" aria-label="Главная Ecofin">
+                    <img src="/assets/ecofin-favicon.png" alt="" class="nav-brand-logo" width="28" height="28" />
                     <span class="nav-brand-copy">
                         <span class="nav-brand-name">Ecofin</span>
-                        <span class="nav-brand-tagline i18n" data-lang="uz" hidden>
-                            Ochiq moliyaviy bilim, hamma uchun
-                        </span>
-                        <span
-                            class="nav-brand-tagline i18n"
-                            data-lang="en"
-                         hidden>
-                            Open finance knowledge, for everyone
-                        </span>
-                        <span
-                            class="nav-brand-tagline i18n"
-                            data-lang="ru"
-                        >
-                            Открытые финансовые знания, для всех
-                        </span>
+                        <span class="nav-brand-tagline">Открытые финансовые знания, для всех</span>
                     </span>
                 </a>
-
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#primaryNav"
-                    aria-controls="primaryNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Открыть навигацию">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse nav-menu" id="primaryNav">
-                    <div
-                        class="navbar-nav ms-md-auto align-items-md-center gap-md-2"
-                    >
-                        <a href="https://blog.ecofin.uz/ru/" class="nav-link">
-                            <span class="i18n" data-lang="uz" hidden>Blog</span>
-                            <span class="i18n" data-lang="en" hidden>Blog</span>
-                            <span class="i18n" data-lang="ru">Блог</span>
-                        </a>
-
-                        <a
-                            href="https://github.com/ecofinuz"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="nav-link"
-                        >
-                            GitHub
-                        </a>
-
-                        <nav
-                            class="language-switch btn-group my-3 my-md-0"
-                            aria-label="Выбор языка"
-                        >
-                                <a
-                                    href="/"
-                                    class="language-option"
-                                    hreflang="uz"
-                                    lang="uz"
-                                >
-                                    UZ
-                                </a>
-                                <a
-                                    href="/en/"
-                                    class="language-option"
-                                    hreflang="en"
-                                    lang="en"
-                                >
-                                    EN
-                                </a>
-                                <a
-                                    href="/ru/"
-                                    class="language-option active"
-                                    hreflang="ru"
-                                    lang="ru"
-                                    aria-current="page"
-                                >
-                                    RU
-                                </a>
-                        </nav>
-
-                        <button
-                            class="theme-toggle my-1 my-md-0"
-                            type="button"
-                            data-theme-toggle
-                            aria-label="Toggle color theme"
-                            aria-pressed="false"
-                        >
-                            <svg
-                                class="theme-toggle-icon theme-toggle-moon"
-                                width="18"
-                                height="18"
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M21 14.2A8.1 8.1 0 0 1 9.8 3 8.8 8.8 0 1 0 21 14.2Z"
-                                />
-                            </svg>
-                            <svg
-                                class="theme-toggle-icon theme-toggle-sun"
-                                width="18"
-                                height="18"
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <circle cx="12" cy="12" r="4" />
-                                <path d="M12 2v2" />
-                                <path d="M12 20v2" />
-                                <path d="m4.93 4.93 1.41 1.41" />
-                                <path d="m17.66 17.66 1.41 1.41" />
-                                <path d="M2 12h2" />
-                                <path d="M20 12h2" />
-                                <path d="m6.34 17.66-1.41 1.41" />
-                                <path d="m19.07 4.93-1.41 1.41" />
-                            </svg>
+                    <div class="navbar-nav ms-md-auto align-items-md-center gap-md-2">
+                        <a href="https://blog.ecofin.uz/ru/" class="nav-link">Блог</a>
+                        <a href="https://github.com/ecofinuz" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+                        <nav class="language-switch btn-group my-3 my-md-0" aria-label="Выбор языка"><a href="/" class="language-option" hreflang="uz" lang="uz">UZ</a><a href="/en/" class="language-option" hreflang="en" lang="en">EN</a><a href="/ru/" class="language-option active" hreflang="ru" lang="ru" aria-current="page">RU</a></nav>
+                        <button class="theme-toggle my-1 my-md-0" type="button" data-theme-toggle aria-label="Переключить тему оформления" aria-pressed="false">
+                            <svg class="theme-toggle-icon theme-toggle-moon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.2A8.1 8.1 0 0 1 9.8 3 8.8 8.8 0 1 0 21 14.2Z" /></svg>
+                            <svg class="theme-toggle-icon theme-toggle-sun" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg>
                         </button>
-
-                        <a
-                            href="#sponsors"
-                            class="btn button button-primary nav-support ms-md-1"
-                        >
-                            <span class="i18n" data-lang="uz"
-                                 hidden>Qo'llab-quvvatlash</span
-                            >
-                            <span class="i18n" data-lang="en"
-                                 hidden>Support us</span
-                            >
-                            <span class="i18n" data-lang="ru"
-                                >Поддержать</span
-                            >
-                        </a>
+                        <a href="/ru/support/" class="btn button button-primary nav-support ms-md-1">Поддержать</a>
                     </div>
                 </div>
             </div>
@@ -284,730 +135,91 @@
             <section class="hero container" aria-labelledby="hero-title">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-7 col-xl-7 hero-copy">
-                        <p class="label-small i18n" data-lang="uz" hidden>
-                            Moliya sodda tilda
-                        </p>
-                        <p class="label-small i18n" data-lang="en" hidden>
-                            Finance, explained simply
-                        </p>
-                        <p class="label-small i18n" data-lang="ru">
-                            Финансы простым языком
-                        </p>
-
-                        <h1 id="hero-title" class="hero-title">
-                            <span class="i18n" data-lang="uz"
-                                 hidden>Moliya va iqtisod hammaga tushunarli
-                                tilda</span
-                            >
-                            <span class="i18n" data-lang="en"
-                                 hidden>Finance and economics explained for
-                                everyone</span
-                            >
-                            <span class="i18n" data-lang="ru"
-                                >Финансы и экономика понятным языком для
-                                каждого</span
-                            >
-                        </h1>
-
-                        <p class="hero-lede i18n" data-lang="uz" hidden>
-                            Kreditlar, jamg'arma, foiz stavkalari, bank
-                            xizmatlari va kundalik moliyaviy qarorlar bo'yicha
-                            sodda qo'llanmalarni o'qing.
-                        </p>
-                        <p class="hero-lede i18n" data-lang="en" hidden>
-                            Read clear guides on loans, saving, interest rates,
-                            banking, and everyday financial decisions.
-                        </p>
-                        <p class="hero-lede i18n" data-lang="ru">
-                            Читайте понятные материалы о кредитах, сбережениях,
-                            процентных ставках, банках и повседневных финансовых
-                            решениях.
-                        </p>
-
-                        <div
-                            class="d-flex flex-column flex-sm-row gap-3 hero-actions"
-                        >
-                            <a
-                                href="https://blog.ecofin.uz"
-                                class="btn button button-primary i18n"
-                                data-lang="uz"
-                             hidden>
-                                Blogni o'qish
-                            </a>
-                            <a
-                                href="https://blog.ecofin.uz/en/"
-                                class="btn button button-primary i18n"
-                                data-lang="en"
-                             hidden>
-                                Read the blog
-                            </a>
-                            <a
-                                href="https://blog.ecofin.uz/ru/"
-                                class="btn button button-primary i18n"
-                                data-lang="ru"
-                            >
-                                Читать блог
-                            </a>
+                        <p class="label-small">Финансы простым языком</p>
+                        <h1 id="hero-title" class="hero-title">Финансы и экономика понятным языком для каждого</h1>
+                        <p class="hero-lede">Читайте понятные материалы о кредитах, сбережениях, процентных ставках, банках и повседневных финансовых решениях.</p>
+                        <div class="d-flex flex-column flex-sm-row gap-3 hero-actions">
+                            <a href="https://blog.ecofin.uz/ru/kredit/kak-formiruetsya-protsentnaya-stavka/" class="btn button button-primary">Почему ставка 49%?</a>
                         </div>
+                        <p class="hero-note">Бесплатно, с открытым исходным кодом и для практической финансовой грамотности.</p>
                     </div>
-
                     <div class="col-lg-5 col-xl-4 offset-xl-1">
                         <article class="hero-start-card">
-                            <p class="label-small i18n" data-lang="uz" hidden>
-                                Shu yerdan boshlang
-                            </p>
-                            <p class="label-small i18n" data-lang="en" hidden>
-                                Start here
-                            </p>
-                            <p class="label-small i18n" data-lang="ru">
-                                Начните здесь
-                            </p>
-
-                            <h2 class="hero-start-title">
-                                <span class="i18n" data-lang="uz"
-                                     hidden>Foiz stavkasi qanday belgilanadi?</span
-                                >
-                                <span class="i18n" data-lang="en"
-                                     hidden>How Are Interest Rates Set?</span
-                                >
-                                <span class="i18n" data-lang="ru"
-                                    >Как формируется процентная ставка?</span
-                                >
-                            </h2>
-
-                            <p
-                                class="hero-start-description i18n"
-                                data-lang="uz"
-                             hidden>
-                                49% stavka qayerdan keladi?
-                            </p>
-                            <p
-                                class="hero-start-description i18n"
-                                data-lang="en"
-                             hidden>
-                                Where does a 49% rate come from?
-                            </p>
-                            <p
-                                class="hero-start-description i18n"
-                                data-lang="ru"
-                            >
-                                Откуда берется ставка 49%?
-                            </p>
-
-                            <a
-                                href="https://blog.ecofin.uz/kredit/foiz-stavkasi-qanday-belgilanadi/"
-                                class="text-link hero-start-link i18n"
-                                data-lang="uz"
-                             hidden>
-                                Maqolani o'qish →
-                            </a>
-                            <a
-                                href="https://blog.ecofin.uz/en/loan/how-rates-are-determined/"
-                                class="text-link hero-start-link i18n"
-                                data-lang="en"
-                             hidden>
-                                Read article →
-                            </a>
-                            <a
-                                href="https://blog.ecofin.uz/ru/kredit/kak-formiruetsya-protsentnaya-stavka/"
-                                class="text-link hero-start-link i18n"
-                                data-lang="ru"
-                            >
-                                Читать статью →
-                            </a>
+                            <p class="label-small">Практический инструмент</p>
+                            <h2 class="hero-start-title">Калькулятор аннуитетного кредита</h2>
+                            <p class="hero-start-description">Посмотрите, какая часть платежа идет на проценты и основной долг.</p>
+                            <a href="https://blog.ecofin.uz/ru/kredit/kak-rabotayut-kredity/#аннуитет" class="text-link hero-start-link">Открыть калькулятор →</a>
                         </article>
                     </div>
                 </div>
             </section>
 
-            <section
-                id="projects"
-                class="page-section"
-                aria-labelledby="projects-title"
-            >
+            <section id="projects" class="page-section section-band" aria-labelledby="projects-title">
                 <div class="container">
-                    <p class="section-label i18n" data-lang="uz" hidden>Loyihalar</p>
-                    <p class="section-label i18n" data-lang="en" hidden>
-                        Projects
-                    </p>
-                    <p class="section-label i18n" data-lang="ru">
-                        Проекты
-                    </p>
-
                     <div class="section-heading-row">
-                        <h2 id="projects-title">
-                            <span class="i18n" data-lang="uz"
-                                 hidden>Ecofin nimalar yaratmoqda</span
-                            >
-                            <span class="i18n" data-lang="en"
-                                 hidden>What Ecofin is building</span
-                            >
-                            <span class="i18n" data-lang="ru"
-                                >Что создает Ecofin</span
-                            >
-                        </h2>
-                        <p class="section-subtitle i18n" data-lang="uz" hidden>
-                            Ecofin amaliy moliyaviy ta'limdan boshlanadi va
-                            odamlar ishlata oladigan vositalarga aylanadi.
-                        </p>
-                        <p class="section-subtitle i18n" data-lang="en" hidden>
-                            Ecofin starts with practical financial education and
-                            grows into tools people can use.
-                        </p>
-                        <p class="section-subtitle i18n" data-lang="ru">
-                            Ecofin начинается с практического финансового
-                            образования и развивается в инструменты, которыми
-                            можно пользоваться.
-                        </p>
+                        <p class="section-label">Проекты</p>
+                        <h2 id="projects-title">Что создает Ecofin</h2>
+                        <p class="section-subtitle">Ecofin начинается с практического финансового образования и развивается в инструменты, которыми можно пользоваться.</p>
                     </div>
-
                     <div class="row g-4">
-                        <div class="col-12 col-md-4">
-                            <article
-                                class="card info-card project-card project-card--passive h-100"
-                            >
-                                <div class="card-body">
-                                    <div class="card-topline">
-                                        <p class="eyebrow">
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>O'rganing</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Learn</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Учитесь</span
-                                            >
-                                        </p>
-                                        <span class="badge">
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Ishlayapti</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Live</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Доступно</span
-                                            >
-                                        </span>
-                                    </div>
-                                    <h3>
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>Moliyani sodda tilda
-                                            o'rganing</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>Learn finance in plain
-                                            language</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Изучайте финансы простым
-                                            языком</span
-                                        >
-                                    </h3>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="uz"
-                                     hidden>
-                                        Kreditlar, foiz stavkalari, inflyatsiya,
-                                        bank xizmatlari va kundalik pul
-                                        qarorlari bo'yicha qo'llanmalar.
-                                    </p>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="en"
-                                     hidden>
-                                        Guides on loans, interest rates,
-                                        inflation, banking, and everyday money
-                                        decisions.
-                                    </p>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="ru"
-                                    >
-                                        Материалы о кредитах, процентных
-                                        ставках, инфляции, банках и повседневных
-                                        денежных решениях.
-                                    </p>
-                                    <a
-                                        href="https://blog.ecofin.uz"
-                                        class="text-link i18n"
-                                        data-lang="uz"
-                                         hidden>Blogni o'qish →</a
-                                    >
-                                    <a
-                                        href="https://blog.ecofin.uz/en/"
-                                        class="text-link i18n"
-                                        data-lang="en"
-                                         hidden>Read the blog →</a
-                                    >
-                                    <a
-                                        href="https://blog.ecofin.uz/ru/"
-                                        class="text-link i18n"
-                                        data-lang="ru"
-                                        >Читать блог →</a
-                                    >
-                                </div>
-                            </article>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                    <article class="card info-card project-card">
+                        <div class="card-body">
+                            <div class="card-topline">
+                                <p class="eyebrow">Учитесь</p>
+                                <span class="badge">Доступно</span>
+                            </div>
+                            <h3>Изучайте финансы простым языком</h3>
+                            <p class="project-card-copy">Материалы о кредитах, процентных ставках, инфляции, банках и повседневных денежных решениях.</p>
+                            <a href="https://blog.ecofin.uz/ru/" class="text-link">Читать блог →</a>
                         </div>
+                    </article></div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                    <article class="card info-card project-card project-card--passive">
+                        <div class="card-body">
+                            <div class="card-topline">
+                                <p class="eyebrow">Практикуйтесь</p>
+                                <span class="badge">Скоро</span>
+                            </div>
+                            <h3>Практикуйтесь с простыми инструментами</h3>
+                            <p class="project-card-copy">Бюджетирование, калькуляторы и инструменты личных финансов для локальных пользователей.</p>
 
-                        <div class="col-12 col-md-4">
-                            <article class="card info-card project-card h-100">
-                                <div class="card-body">
-                                    <div class="card-topline">
-                                        <p class="eyebrow">
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Amalda qo'llang</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Practice</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Практикуйтесь</span
-                                            >
-                                        </p>
-                                        <span class="badge">
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Tez kunda</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Coming soon</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Скоро</span
-                                            >
-                                        </span>
-                                    </div>
-                                    <h3>
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>Sodda vositalar bilan mashq
-                                            qiling</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>Practice with simple tools</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Практикуйтесь с простыми
-                                            инструментами</span
-                                        >
-                                    </h3>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="uz"
-                                     hidden>
-                                        Mahalliy foydalanuvchilar uchun budjet,
-                                        kalkulyatorlar va shaxsiy moliya
-                                        vositalari.
-                                    </p>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="en"
-                                     hidden>
-                                        Budgeting, calculators, and personal
-                                        finance tools designed for local users.
-                                    </p>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="ru"
-                                    >
-                                        Бюджетирование, калькуляторы и
-                                        инструменты личных финансов для
-                                        локальных пользователей.
-                                    </p>
-                                </div>
-                            </article>
                         </div>
+                    </article></div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                    <article class="card info-card project-card">
+                        <div class="card-body">
+                            <div class="card-topline">
+                                <p class="eyebrow">Открытая разработка</p>
 
-                        <div class="col-12 col-md-4">
-                            <article class="card info-card project-card h-100">
-                                <div class="card-body">
-                                    <p class="eyebrow">
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>Ochiq yaratiladi</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>Build in public</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Открытая разработка</span
-                                        >
-                                    </p>
-                                    <h3>
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>Ochiq tarzda quriladi</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>Built in public</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Создается открыто</span
-                                        >
-                                    </h3>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="uz"
-                                     hidden>
-                                        Ecofin kodi, rejasi va tajribalari
-                                        o'rganish, qayta ishlatish va hissa
-                                        qo'shish uchun ochiq.
-                                    </p>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="en"
-                                     hidden>
-                                        Ecofin's code, roadmap, and experiments
-                                        are open for learning, reuse, and
-                                        contribution.
-                                    </p>
-                                    <p
-                                        class="project-card-copy i18n"
-                                        data-lang="ru"
-                                    >
-                                        Код, планы и эксперименты Ecofin открыты
-                                        для изучения, повторного использования и
-                                        участия.
-                                    </p>
-                                    <a
-                                        href="https://github.com/ecofinuz"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="text-link"
-                                    >
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>GitHub'da ko'rish →</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>View GitHub →</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Смотреть на GitHub →</span
-                                        >
-                                    </a>
-                                </div>
-                            </article>
+                            </div>
+                            <h3>Создается открыто</h3>
+                            <p class="project-card-copy">Код, планы и эксперименты Ecofin открыты для изучения, повторного использования и участия.</p>
+                            <a href="https://github.com/ecofinuz" class="text-link" target="_blank" rel="noopener noreferrer">Смотреть на GitHub →</a>
                         </div>
+                    </article></div>
                     </div>
                 </div>
             </section>
 
-            <section
-                id="sponsors"
-                class="page-section section-band sponsors-section"
-                aria-labelledby="sponsors-title"
-            >
+            <section id="support" class="page-section" aria-labelledby="support-title">
                 <div class="container">
                     <div class="row g-5 align-items-start">
                         <div class="col-lg-6 section-copy">
-                            <p class="section-label i18n" data-lang="uz" hidden>
-                                Ecofin'ni qo'llab-quvvatlang
-                            </p>
-                            <p class="section-label i18n" data-lang="en" hidden>
-                                Support Ecofin
-                            </p>
-                            <p class="section-label i18n" data-lang="ru">
-                                Поддержите Ecofin
-                            </p>
-
-                            <h2 id="sponsors-title">
-                                <span class="i18n" data-lang="uz"
-                                     hidden>Moliyaviy ta'lim bepul qolishiga yordam
-                                    bering</span
-                                >
-                                <span class="i18n" data-lang="en"
-                                     hidden>Keep financial education free</span
-                                >
-                                <span class="i18n" data-lang="ru"
-                                    >Помогите сохранить финансовое образование
-                                    бесплатным</span
-                                >
-                            </h2>
-
-                            <p class="i18n" data-lang="uz" hidden>
-                                Ecofin bepul va ochiq kodli. Homiylik amaliy
-                                maqolalar chiqarish, vositalar yaratish va
-                                loyihani qo'llab turishga yordam beradi.
-                            </p>
-                            <p class="i18n" data-lang="en" hidden>
-                                Ecofin is free and open-source. Sponsorship
-                                helps us publish practical articles, build
-                                tools, and maintain the project.
-                            </p>
-                            <p class="i18n" data-lang="ru">
-                                Ecofin бесплатный и с открытым исходным кодом.
-                                Поддержка помогает выпускать практические
-                                материалы, создавать инструменты и поддерживать
-                                проект.
-                            </p>
-
+                            <p class="section-label">Поддержите Ecofin</p>
+                            <h2 id="support-title">Помогите сохранить финансовое образование бесплатным</h2>
+                            <p>Ecofin бесплатный и с открытым исходным кодом. Поддержка помогает выпускать практические материалы, создавать инструменты и поддерживать проект.</p>
                             <div class="support-actions">
-                                <a
-                                    class="btn button button-primary support-service-link"
-                                    data-support-service-link
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    hidden
-                                >
-                                    <span class="i18n" data-lang="uz"
-                                         hidden>Tirikchilik orqali qo'llab-quvvatlash
-                                        →</span
-                                    >
-                                    <span class="i18n" data-lang="en"
-                                         hidden>Support on Tirikchilik →</span
-                                    >
-                                    <span class="i18n" data-lang="ru"
-                                        >Поддержать через Tirikchilik →</span
-                                    >
-                                </a>
-
-                                <p
-                                    class="support-service-note"
-                                    data-support-service-note
-                                >
-                                    <span class="i18n" data-lang="uz" hidden>
-                                        Tirikchilik orqali qo'llab-quvvatlash
-                                        tez kunda qo'shiladi.
-                                    </span>
-                                    <span class="i18n" data-lang="en" hidden>
-                                        Tirikchilik support integration is
-                                        coming soon.
-                                    </span>
-                                    <span class="i18n" data-lang="ru">
-                                        Поддержка через Tirikchilik скоро
-                                        появится.
-                                    </span>
-                                </p>
-
-                                <a
-                                    href="#direct-transfer"
-                                    class="text-link support-direct-link"
-                                >
-                                    <span class="i18n" data-lang="uz"
-                                         hidden>To'g'ridan-to'g'ri o'tkazma
-                                        kerakmi?</span
-                                    >
-                                    <span class="i18n" data-lang="en"
-                                         hidden>Prefer direct transfer?</span
-                                    >
-                                    <span class="i18n" data-lang="ru"
-                                        >Предпочитаете прямой перевод?</span
-                                    >
-                                </a>
+                                <a href="/ru/support/" class="btn button button-primary">Страница поддержки →</a>
+                                <a href="https://github.com/ecofinuz/.github/blob/main/roadmap.md" target="_blank" rel="noopener noreferrer" class="text-link support-direct-link">Посмотреть roadmap</a>
+                                <p class="support-service-note">Поддержка не влияет на редакционные решения Ecofin и выводы в материалах.</p>
                             </div>
                         </div>
-
                         <div class="col-lg-5 offset-lg-1">
                             <article class="card info-card funding-card">
                                 <div class="card-body">
-                                    <h3>
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>Homiylik nimalarga yordam
-                                            beradi</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>What your support helps fund</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >На что помогает поддержка</span
-                                        >
-                                    </h3>
-                                    <ul class="funding-list">
-                                        <li>
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Yangi maqolalar va
-                                                tarjimalar</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>New articles and
-                                                translations</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Новые статьи и переводы</span
-                                            >
-                                        </li>
-                                        <li>
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Interaktiv moliyaviy
-                                                vositalar</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Interactive financial
-                                                tools</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Интерактивные финансовые
-                                                инструменты</span
-                                            >
-                                        </li>
-                                        <li>
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Hosting va texnik xizmat</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Hosting and maintenance</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Хостинг и поддержка</span
-                                            >
-                                        </li>
-                                        <li>
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Ochiq kodli ishlab
-                                                chiqish</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Open-source development</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Open-source разработка</span
-                                            >
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-
-                            <article
-                                id="direct-transfer"
-                                class="card info-card direct-transfer-card"
-                            >
-                                <div class="card-body">
-                                    <p class="eyebrow">
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>To'g'ridan-to'g'ri o'tkazma</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>Direct transfer</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Прямой перевод</span
-                                        >
-                                    </p>
-                                    <div class="transfer-details">
-                                        <div class="direct-transfer-row">
-                                            <span class="transfer-label">
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="uz"
-                                                     hidden>Karta</span
-                                                >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="en"
-                                                     hidden>Card</span
-                                                >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="ru"
-                                                    >Карта</span
-                                                >
-                                            </span>
-                                            <strong>9860 0201 2078 0810</strong>
-                                            <button
-                                                class="copy-button"
-                                                type="button"
-                                                data-copy-value="9860 0201 2078 0810"
-                                                data-copy-copied-uz="Karta nusxalandi"
-                                                data-copy-copied-en="Card copied"
-                                                data-copy-copied-ru="Карта скопирована"
-                                                data-copy-failed-uz="Nusxalab bo'lmadi"
-                                                data-copy-failed-en="Could not copy"
-                                                data-copy-failed-ru="Не удалось скопировать"
-                                            >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="uz"
-                                                     hidden>Nusxalash</span
-                                                >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="en"
-                                                     hidden>Copy</span
-                                                >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="ru"
-                                                    >Копировать</span
-                                                >
-                                            </button>
-                                            <span
-                                                class="copy-status"
-                                                data-copy-status
-                                                aria-live="polite"
-                                            ></span>
-                                        </div>
-
-                                        <div class="direct-transfer-row">
-                                            <span class="transfer-label"
-                                                >Email</span
-                                            >
-                                            <strong
-                                                >hojiakbar@barotov.uz</strong
-                                            >
-                                            <button
-                                                class="copy-button"
-                                                type="button"
-                                                data-copy-value="hojiakbar@barotov.uz"
-                                                data-copy-copied-uz="Email nusxalandi"
-                                                data-copy-copied-en="Email copied"
-                                                data-copy-copied-ru="Email скопирован"
-                                                data-copy-failed-uz="Nusxalab bo'lmadi"
-                                                data-copy-failed-en="Could not copy"
-                                                data-copy-failed-ru="Не удалось скопировать"
-                                            >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="uz"
-                                                     hidden>Nusxalash</span
-                                                >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="en"
-                                                     hidden>Copy</span
-                                                >
-                                                <span
-                                                    class="i18n"
-                                                    data-lang="ru"
-                                                    >Копировать</span
-                                                >
-                                            </button>
-                                            <span
-                                                class="copy-status"
-                                                data-copy-status
-                                                aria-live="polite"
-                                            ></span>
-                                        </div>
-                                    </div>
+                                    <h3>На что помогает поддержка</h3>
+                                    <ul class="funding-list"><li>Новые статьи и переводы</li><li>Интерактивные финансовые инструменты</li><li>Хостинг и поддержка</li><li>Open-source разработка</li></ul>
                                 </div>
                             </article>
                         </div>
@@ -1015,225 +227,26 @@
                 </div>
             </section>
 
-            <section
-                id="about"
-                class="page-section section-band about-section"
-                aria-labelledby="about-title"
-            >
+            <section id="about" class="page-section section-band" aria-labelledby="about-title">
                 <div class="container">
-                    <div class="row g-5 align-items-start">
+                    <div class="row g-5 align-items-center">
                         <div class="col-lg-6 section-copy">
-                            <p class="section-label i18n" data-lang="uz" hidden>
-                                Biz haqimizda
-                            </p>
-                            <p class="section-label i18n" data-lang="en" hidden>
-                                About
-                            </p>
-                            <p class="section-label i18n" data-lang="ru">
-                                О нас
-                            </p>
-
-                            <h2 id="about-title">
-                                <span class="i18n" data-lang="uz"
-                                     hidden>Hamjamiyat qurayotgan ochiq moliyaviy
-                                    ta'lim</span
-                                >
-                                <span class="i18n" data-lang="en"
-                                     hidden>Open financial education, built by the
-                                    community</span
-                                >
-                                <span class="i18n" data-lang="ru"
-                                    >Открытое финансовое образование,
-                                    создаваемое сообществом</span
-                                >
-                            </h2>
-                            <p class="i18n" data-lang="uz" hidden>
-                                Ecofin moliyaviy savodxonlikni amaliy, mahalliy
-                                va tushunarli qilishga qaratilgan hamjamiyatga
-                                ochiq, open-source loyihadir. Maqolalar,
-                                vositalar va tajribalar omma uchun ochiq
-                                yaratiladi.
-                            </p>
-                            <p class="i18n" data-lang="en" hidden>
-                                Ecofin is a community-driven open-source project
-                                that makes financial literacy practical, local,
-                                and easier to understand. Articles, tools, and
-                                experiments are built in public for anyone to
-                                read, use, and improve.
-                            </p>
-                            <p class="i18n" data-lang="ru">
-                                Ecofin — open-source проект, развиваемый
-                                сообществом. Он делает финансовую грамотность
-                                практичной, локальной и понятной. Материалы,
-                                инструменты и эксперименты создаются публично,
-                                чтобы ими можно было пользоваться и улучшать их.
-                            </p>
-                            <p class="i18n" data-lang="uz" hidden>
-                                Loyiha kreditlar, foiz stavkalari, jamg'arma,
-                                bank xizmatlari va shaxsiy moliya kabi
-                                mavzularga e'tibor qaratadi — kod, yo'l xaritasi
-                                va fikr-mulohaza jarayoni esa ochiq.
-                            </p>
-                            <p class="i18n" data-lang="en" hidden>
-                                The project focuses on loans, interest rates,
-                                saving, banking, and personal finance — with
-                                transparent code, public progress, and community
-                                feedback.
-                            </p>
-                            <p class="i18n" data-lang="ru">
-                                Проект фокусируется на кредитах, процентных
-                                ставках, сбережениях, банках и личных финансах —
-                                с открытым кодом, публичным прогрессом и
-                                обратной связью сообщества.
-                            </p>
-
-                            <div class="about-trust-row">
-                                <span>
-                                    <span class="i18n" data-lang="uz"
-                                         hidden>Ochiq kodli</span
-                                    >
-                                    <span class="i18n" data-lang="en"
-                                         hidden>Open-source</span
-                                    >
-                                    <span class="i18n" data-lang="ru"
-                                        >Open-source</span
-                                    >
-                                </span>
-                                <span>
-                                    <span class="i18n" data-lang="uz"
-                                         hidden>Kodi ochiq</span
-                                    >
-                                    <span class="i18n" data-lang="en"
-                                         hidden>Public code</span
-                                    >
-                                    <span class="i18n" data-lang="ru"
-                                        >Открытый код</span
-                                    >
-                                </span>
-                                <span>
-                                    <span class="i18n" data-lang="uz"
-                                         hidden>Hamjamiyat fikri</span
-                                    >
-                                    <span class="i18n" data-lang="en"
-                                         hidden>Community feedback</span
-                                    >
-                                    <span class="i18n" data-lang="ru"
-                                        >Обратная связь сообщества</span
-                                    >
-                                </span>
-                            </div>
+                            <p class="section-label">О нас</p>
+                            <h2 id="about-title">Открытое финансовое образование, создаваемое сообществом</h2>
+                            <p>Ecofin — community-driven open-source проект, который делает финансовую грамотность практичной, локальной и понятной. Мы публикуем простые объяснения и создаем инструменты, которые помогают принимать лучшие повседневные финансовые решения.</p>
+                            <p>Мы фокусируемся на кредитах, процентных ставках, сбережениях, банках и личных финансах — с открытым кодом и публичным развитием проекта.</p>
+                            <div class="about-trust-row"><span>Open-source</span><span>Открытый код</span><span>Обратная связь сообщества</span></div>
                         </div>
-
                         <div class="col-lg-6">
                             <article class="card community-panel">
                                 <div class="card-body">
-                                    <p class="section-label community-label">
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>Hamjamiyat loyihasi</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>Community project</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Проект сообщества</span
-                                        >
-                                    </p>
-                                    <h3>
-                                        <span class="i18n" data-lang="uz"
-                                             hidden>Hissa qo'shish uchun ochiq</span
-                                        >
-                                        <span class="i18n" data-lang="en"
-                                             hidden>Open to contributors</span
-                                        >
-                                        <span class="i18n" data-lang="ru"
-                                            >Открыт для участия</span
-                                        >
-                                    </h3>
-                                    <p>
-                                        <span class="i18n" data-lang="uz" hidden>
-                                            Maqola takliflari, tuzatishlar,
-                                            tarjimalar va vosita g'oyalari
-                                            Ecofin foydaliroq bo'lishiga yordam
-                                            beradi.
-                                        </span>
-                                        <span class="i18n" data-lang="en" hidden>
-                                            Article ideas, corrections,
-                                            translations, and tool proposals help
-                                            Ecofin become more useful.
-                                        </span>
-                                        <span class="i18n" data-lang="ru">
-                                            Идеи для статей, исправления,
-                                            переводы и предложения для
-                                            инструментов помогают Ecofin быть
-                                            полезнее.
-                                        </span>
-                                    </p>
-                                    <ul class="community-list">
-                                        <li>
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Maqola va tarjima
-                                                takliflari</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Article and translation
-                                                suggestions</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Предложения статей и
-                                                переводов</span
-                                            >
-                                        </li>
-                                        <li>
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Ochiq kod va muhokamalar</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Open code and discussions</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Открытый код и обсуждения</span
-                                            >
-                                        </li>
-                                        <li>
-                                            <span class="i18n" data-lang="uz"
-                                                 hidden>Mahalliy moliya tajribasi</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="en"
-                                                 hidden>Local finance context</span
-                                            >
-                                            <span
-                                                class="i18n"
-                                                data-lang="ru"
-                                                >Локальный финансовый
-                                                контекст</span
-                                            >
-                                        </li>
-                                    </ul>
+                                    <p class="section-label community-label">Проект сообщества</p>
+                                    <h3>Открыт для участия</h3>
+                                    <p>Идеи для статей, исправления, переводы и предложения для инструментов помогают Ecofin быть полезнее.</p>
+                                    <ul class="community-list"><li>Предложения статей и переводов</li><li>Открытый код и обсуждения</li><li>Локальный финансовый контекст</li></ul>
                                     <div class="community-actions">
-                                        <a
-                                            href="https://github.com/ecofinuz"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            class="text-link"
-                                            >GitHub →</a
-                                        >
-                                        <a
-                                            href="https://t.me/ecofin_uz"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            class="text-link"
-                                            >Telegram →</a
-                                        >
+                                        <a href="https://github.com/ecofinuz" target="_blank" rel="noopener noreferrer" class="text-link">Участвовать на GitHub →</a>
+                                        <a href="https://t.me/ecofin_uz" target="_blank" rel="noopener noreferrer" class="text-link">Следить в Telegram →</a>
                                     </div>
                                 </div>
                             </article>
@@ -1248,263 +261,53 @@
                 <div class="footer-grid">
                     <div class="footer-brand-block">
                         <span class="footer-brand">Ecofin</span>
-                        <p class="footer-tagline">
-                            <span class="i18n" data-lang="uz"
-                                 hidden>Ochiq moliyaviy bilim, hamma uchun</span
-                            >
-                            <span class="i18n" data-lang="en"
-                                 hidden>Open finance knowledge, for everyone</span
-                            >
-                            <span class="i18n" data-lang="ru"
-                                >Открытые финансовые знания, для всех</span
-                            >
-                        </p>
-                        <p class="footer-open-source">
-                            <span class="i18n" data-lang="uz"
-                                 hidden>Ochiq kodli moliyaviy ta'lim loyihasi.</span
-                            >
-                            <span class="i18n" data-lang="en"
-                                 hidden>An open-source financial education
-                                project.</span
-                            >
-                            <span class="i18n" data-lang="ru"
-                                >Open-source проект финансового
-                                образования.</span
-                            >
-                        </p>
+                        <p class="footer-tagline">Открытые финансовые знания, для всех</p>
+                        <p class="footer-open-source">Open-source проект финансового образования.</p>
                     </div>
-
                     <div class="footer-column">
-                        <p class="footer-heading">
-                            <span class="i18n" data-lang="uz"
-                                 hidden>Yo'nalishlar</span
-                            >
-                            <span class="i18n" data-lang="en"
-                                 hidden>Explore</span
-                            >
-                            <span class="i18n" data-lang="ru"
-                                >Разделы</span
-                            >
-                        </p>
+                        <p class="footer-heading">Разделы</p>
                         <nav class="footer-links">
-                            <a href="https://blog.ecofin.uz/ru/">
-                                <span class="i18n" data-lang="uz" hidden>Blog</span>
-                                <span class="i18n" data-lang="en"
-                                     hidden>Blog</span
-                                >
-                                <span class="i18n" data-lang="ru"
-                                    >Блог</span
-                                >
-                            </a>
-                            <a href="#projects">
-                                <span class="i18n" data-lang="uz"
-                                     hidden>Loyihalar</span
-                                >
-                                <span class="i18n" data-lang="en"
-                                     hidden>Projects</span
-                                >
-                                <span class="i18n" data-lang="ru"
-                                    >Проекты</span
-                                >
-                            </a>
-                            <a href="#sponsors">
-                                <span class="i18n" data-lang="uz"
-                                     hidden>Ecofin'ni qo'llab-quvvatlash</span
-                                >
-                                <span class="i18n" data-lang="en"
-                                     hidden>Support Ecofin</span
-                                >
-                                <span class="i18n" data-lang="ru"
-                                    >Поддержать Ecofin</span
-                                >
-                            </a>
+                            <a href="https://blog.ecofin.uz/ru/">Блог</a>
+                            <a href="#projects">Проекты</a>
+                            <a href="/ru/support/">Поддержать Ecofin</a>
                         </nav>
                     </div>
-
                     <div class="footer-column">
-                        <p class="footer-heading">
-                            <span class="i18n" data-lang="uz" hidden>Hamjamiyat</span>
-                            <span class="i18n" data-lang="en"
-                                 hidden>Community</span
-                            >
-                            <span class="i18n" data-lang="ru"
-                                >Сообщество</span
-                            >
-                        </p>
+                        <p class="footer-heading">Сообщество</p>
                         <nav class="footer-links">
-                            <a
-                                href="https://github.com/ecofinuz"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >GitHub</a
-                            >
-                            <a
-                                href="https://t.me/ecofin_uz"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Telegram</a
-                            >
+                            <a href="https://github.com/ecofinuz" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://t.me/ecofin_uz" target="_blank" rel="noopener noreferrer">Telegram</a>
                         </nav>
                     </div>
                 </div>
-
                 <div class="footer-bottom">
-                    <p>
-                        <span class="i18n" data-lang="uz"
-                             hidden>© 2026 Ecofin. Ochiq moliyaviy bilim, hamma
-                            uchun.</span
-                        >
-                        <span class="i18n" data-lang="en"
-                             hidden>© 2026 Ecofin. Open finance knowledge, for
-                            everyone.</span
-                        >
-                        <span class="i18n" data-lang="ru"
-                            >© 2026 Ecofin. Открытые финансовые знания, для
-                            всех.</span
-                        >
-                    </p>
+                    <p>© 2026 Ecofin. Открытые финансовые знания, для всех.</p>
                 </div>
             </div>
         </footer>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script>
             const themeToggle = document.querySelector("[data-theme-toggle]");
-            const themeColor = document.querySelector(
-                'meta[name="theme-color"]',
-            );
+            const themeColor = document.querySelector('meta[name="theme-color"]');
             const themeStorageKey = "ecofin-theme";
-            // TODO: Add Ecofin's Tirikchilik support URL when the public page is ready.
-            const ECOFIN_TIRIKCHILIK_SUPPORT_URL = "";
-            const supportServiceLinks = document.querySelectorAll(
-                "[data-support-service-link]",
-            );
-            const supportServiceNotes = document.querySelectorAll(
-                "[data-support-service-note]",
-            );
-            const copyButtons = document.querySelectorAll("[data-copy-value]");
 
             function setTheme(theme) {
                 const isDark = theme === "dark";
-                document.documentElement.dataset.theme = isDark
-                    ? "dark"
-                    : "light";
-                themeColor?.setAttribute(
-                    "content",
-                    isDark ? "#050807" : "#fffefb",
-                );
+                document.documentElement.dataset.theme = isDark ? "dark" : "light";
+                themeColor?.setAttribute("content", isDark ? "#050807" : "#fffefb");
                 themeToggle?.setAttribute("aria-pressed", String(isDark));
                 try {
-                    localStorage.setItem(
-                        themeStorageKey,
-                        isDark ? "dark" : "light",
-                    );
-                } catch {
-                    // The visual toggle still works without persistent storage.
-                }
-            }
-
-            function setupSupportLinks() {
-                const supportUrl = ECOFIN_TIRIKCHILIK_SUPPORT_URL.trim();
-                const hasSupportUrl = supportUrl.length > 0;
-
-                supportServiceLinks.forEach((link) => {
-                    link.hidden = !hasSupportUrl;
-                    if (hasSupportUrl) {
-                        link.href = supportUrl;
-                    }
-                });
-                supportServiceNotes.forEach((note) => {
-                    note.hidden = hasSupportUrl;
-                });
-            }
-
-            async function copyText(value) {
-                if (navigator.clipboard?.writeText && window.isSecureContext) {
-                    await navigator.clipboard.writeText(value);
-                    return;
-                }
-
-                const textarea = document.createElement("textarea");
-                textarea.value = value;
-                textarea.setAttribute("readonly", "");
-                textarea.style.position = "fixed";
-                textarea.style.top = "-999px";
-                textarea.style.left = "-999px";
-                document.body.append(textarea);
-                textarea.select();
-                try {
-                    if (!document.execCommand("copy")) {
-                        throw new Error("Copy command failed");
-                    }
-                } finally {
-                    textarea.remove();
-                }
-            }
-
-            function copyMessage(button, type) {
-                const lang = document.documentElement.lang || "uz";
-                return button.dataset[
-                    `${type}${lang[0].toUpperCase()}${lang.slice(1)}`
-                ];
-            }
-
-            function setupCopyButtons() {
-                copyButtons.forEach((button) => {
-                    const status = button
-                        .closest(".direct-transfer-row")
-                        ?.querySelector("[data-copy-status]");
-                    let clearTimer;
-
-                    button.addEventListener("click", async () => {
-                        window.clearTimeout(clearTimer);
-                        if (status) {
-                            status.textContent = "";
-                        }
-
-                        try {
-                            await copyText(button.dataset.copyValue ?? "");
-                            if (status) {
-                                status.textContent =
-                                    copyMessage(button, "copyCopied") ??
-                                    "Copied";
-                            }
-                        } catch {
-                            if (status) {
-                                status.textContent =
-                                    copyMessage(button, "copyFailed") ??
-                                    "Could not copy";
-                            }
-                        }
-
-                        clearTimer = window.setTimeout(() => {
-                            if (status) {
-                                status.textContent = "";
-                            }
-                        }, 2400);
-                    });
-                });
+                    localStorage.setItem(themeStorageKey, isDark ? "dark" : "light");
+                } catch {}
             }
 
             themeToggle?.addEventListener("click", () => {
-                const currentTheme =
-                    document.documentElement.dataset.theme === "dark"
-                        ? "dark"
-                        : "light";
+                const currentTheme = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
                 setTheme(currentTheme === "dark" ? "light" : "dark");
             });
 
-            setTheme(
-                document.documentElement.dataset.theme === "dark"
-                    ? "dark"
-                    : "light",
-            );
-            setupSupportLinks();
-            setupCopyButtons();
+            setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
         </script>
     </body>
 </html>

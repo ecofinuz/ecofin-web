@@ -816,6 +816,56 @@ strong {
     font-weight: 700;
 }
 
+.support-page .hero-title {
+    max-width: 13ch;
+}
+
+.support-hero {
+    padding-top: 5.75rem;
+    padding-bottom: 4.25rem;
+}
+
+.support-policy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.support-detail-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.22rem;
+}
+
+.support-detail-card p {
+    color: var(--text-secondary);
+    line-height: 1.58;
+}
+
+.support-statement {
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius);
+    background:
+        linear-gradient(135deg, var(--green-soft), transparent 54%),
+        var(--surface);
+    color: var(--text-primary);
+    padding: 1.5rem;
+}
+
+.support-statement p:last-child {
+    margin-bottom: 0;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.58;
+}
+
+.support-transfer-panel {
+    box-shadow: var(--shadow-sm);
+}
+
+.support-transfer-panel .card-body {
+    padding: 1.5rem;
+}
+
 .about-trust-row {
     display: flex;
     flex-wrap: wrap;
@@ -991,6 +1041,10 @@ strong {
         padding-top: 3rem;
     }
 
+    .support-hero {
+        padding-top: 3rem;
+    }
+
     .hero-start-card {
         max-width: 560px;
         margin-left: 0;
@@ -1006,6 +1060,10 @@ strong {
 
     .hero-title {
         font-size: 3.75rem;
+    }
+
+    .support-policy-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1054,6 +1112,11 @@ strong {
     }
 
     .hero {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .support-hero {
         padding-top: 2.5rem;
         padding-bottom: 3rem;
     }
