@@ -2,6 +2,13 @@
 
 Static landing page for Ecofin, built with plain HTML and CSS.
 
+## Ecosystem Links
+
+- Main site: [ecofin.uz](https://ecofin.uz/)
+- Blog: [blog.ecofin.uz](https://blog.ecofin.uz/)
+- Tools: [tools.ecofin.uz](https://tools.ecofin.uz/)
+- GitHub: [ecofinuz](https://github.com/ecofinuz)
+
 ## Structure
 
 ```text
